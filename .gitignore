@@ -14,4 +14,5 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 
+#avoid accidentaly uploading account_id and zone_id numbers
 wrangler.toml
