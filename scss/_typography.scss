@@ -1,0 +1,8 @@
+@import './mixins';
+
+.typo-links{
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: clamp(rem(14), 3.70vw ,rem(16));
+  color: $very-dark-blue;  
+}

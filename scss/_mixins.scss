@@ -1,0 +1,57 @@
+@function rem($px) {
+  $html-font-size: 16;
+  @return #{$px / $html-font-size}rem;
+}
+
+$breakpoints: (
+  small-mobile: rem(350),
+  mobile: rem(700),
+  tablet: rem(1200),
+  laptop: rem(1440),
+);
+
+@mixin media($size) {
+  $breakpoint: map-get($breakpoints, $size);
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-only-tablet() {
+  $md: map-get($breakpoints, mobile);
+  $lg: map-get($breakpoints, tablet);
+  @media screen and (min-width: calc($md + 1px)) and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+$desktop-container-width: 88.89vw;
+$tablet-container-width: 88.89vw;
+$mobile-container-width: 85.33vw;
+
+@mixin container() {
+ width: $desktop-container-width;
+ margin-left: auto;
+ margin-right: auto;
+
+  @include media(tablet){
+    width: $tablet-container-width;
+  }
+
+ @include media(mobile){
+   width: $mobile-container-width;
+ }
+}
+
+//colors
+$very-dark-blue: #07043B;
+$desaturated-blue: #585989;
+$bright-blue: #3065f8;
+$moderate-cyan: #3c9f8f;
+$light-grayish-blue: #f6f6fe;
+$light-gray: #bfbfbf;

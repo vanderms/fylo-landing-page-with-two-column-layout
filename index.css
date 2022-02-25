@@ -1,0 +1,85 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.typo-links {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: clamp(0.875rem, 3.7vw, 1rem);
+  color: #07043B;
+}
+
+.root-navbar {
+  margin-top: 4.0625rem;
+  width: 88.89vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3.0625rem;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 75rem) {
+  .root-navbar {
+    width: 88.89vw;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-navbar {
+    width: 85.33vw;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-navbar {
+    height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-navbar .logo {
+    height: 1.5rem;
+    width: auto;
+  }
+}
+
+.root-navbar .links {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3.625rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-navbar .links {
+    gap: 1.5rem;
+  }
+}

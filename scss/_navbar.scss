@@ -1,0 +1,33 @@
+@import './mixins';
+
+.root-navbar {
+  margin-top: rem(65);
+  @include container;
+  height: rem(49);
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  
+  @include media(mobile){
+    height: rem(24);
+  }
+
+  .logo{
+    @include media(mobile){
+      height: rem(24);
+      width: auto;
+    }
+  }
+
+  .links{
+    display: grid;
+    grid-auto-flow: column;
+    gap: rem(58);
+    align-content: center;
+    
+    @include media(mobile){
+      gap: rem(24);
+    }
+  }
+
+}

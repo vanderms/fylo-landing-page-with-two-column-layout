@@ -1,0 +1,30 @@
+@import './mixins';
+
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Raleway', sans-serif;
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
