@@ -1,8 +1,31 @@
 @import './mixins';
 
-.typo-links{
-  font-family: 'Raleway', sans-serif;
+
+
+$open-sans: 'Open Sans', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+.tp-links{
+  font-family: $raleway;
   font-weight: normal;
   font-size: clamp(rem(14), 3.70vw ,rem(16));
   color: $very-dark-blue;  
+}
+
+.tp-h1{
+  font-family: $raleway;  
+  font-weight: 700;
+  font-size: clamp(rem(24), 2.75vw, rem(40));
+  line-height: 1.5;
+  color: $very-dark-blue;
+}
+
+.tp-subtitle{
+  font-family: $open-sans;
+
+  font-weight: 400;
+  font-size: rem(17);
+  line-height: 24 / 17;
+  letter-spacing: 0.53125px;
+  color: $very-dark-blue;
 }

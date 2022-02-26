@@ -23,10 +23,27 @@ ul {
   color: #3e52a3;
 }
 
-.typo-links {
-  font-family: 'Raleway', sans-serif;
+.tp-links {
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: clamp(0.875rem, 3.7vw, 1rem);
+  color: #07043B;
+}
+
+.tp-h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.75vw, 2.5rem);
+  line-height: 1.5;
+  color: #07043B;
+}
+
+.tp-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 24 / 17;
+  letter-spacing: 0.53125px;
   color: #07043B;
 }
 
@@ -82,4 +99,48 @@ ul {
   .root-navbar .links {
     gap: 1.5rem;
   }
+}
+
+.root-section-cover {
+  width: 88.89vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5.375rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 75rem) {
+  .root-section-cover {
+    width: 88.89vw;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-section-cover {
+    width: 85.33vw;
+  }
+}
+
+.root-section-cover .bg-image {
+  background-image: url(./images/illustration-1.svg);
+  height: 29.625rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.root-section-cover .content {
+  padding-right: 0.8125rem;
+}
+
+.root-section-cover .title {
+  margin-top: 4.8125rem;
+}
+
+.root-section-cover .description {
+  margin-top: 0.9375rem;
+  max-width: 36.5625rem;
 }

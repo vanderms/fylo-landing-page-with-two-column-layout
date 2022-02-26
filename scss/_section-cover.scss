@@ -1,0 +1,33 @@
+@import './mixins';
+
+
+.root-section-cover{
+  @include container;
+  
+  margin-top: rem(86);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+
+  .bg-image {
+    background-image: url(./images/illustration-1.svg);
+    height: rem(474);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content{
+    padding-right: rem(13);    
+  }
+
+  .title{
+    margin-top: rem(77);
+  }
+
+  .description {
+    margin-top: rem(15);
+    max-width: rem(585);
+  }
+
+}
