@@ -22,10 +22,9 @@ $raleway: 'Raleway', sans-serif;
 
 .tp-subtitle{
   font-family: $open-sans;
-
   font-weight: 400;
-  font-size: rem(17);
-  line-height: 24 / 17;
+  font-size: clamp(rem(14), 1.9vw, rem(17));
+  line-height: 1.41;
   letter-spacing: 0.53125px;
   color: $very-dark-blue;
 }

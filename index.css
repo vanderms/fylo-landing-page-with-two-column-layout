@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -41,14 +42,15 @@ ul {
 .tp-subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.0625rem;
-  line-height: 24 / 17;
+  font-size: clamp(0.875rem, 1.9vw, 1.0625rem);
+  line-height: 1.41;
   letter-spacing: 0.53125px;
   color: #07043B;
 }
 
 .root-navbar {
   margin-top: 4.0625rem;
+  max-width: 90rem;
   width: 88.89vw;
   margin-left: auto;
   margin-right: auto;
@@ -101,15 +103,24 @@ ul {
   }
 }
 
+@media screen and (max-width: 21.875rem) {
+  .root-navbar .links {
+    gap: 1rem;
+  }
+  .root-navbar .links .tp-links {
+    font-size: 0.75rem;
+  }
+}
+
 .root-section-cover {
+  max-width: 90rem;
   width: 88.89vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5.375rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 75rem) {
@@ -124,23 +135,167 @@ ul {
   }
 }
 
+@media screen and (max-width: 75rem) {
+  .root-section-cover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 6.125rem;
+  }
+}
+
 .root-section-cover .bg-image {
+  width: 50%;
+  padding-bottom: 37.03%;
   background-image: url(./images/illustration-1.svg);
-  height: 29.625rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+@media screen and (max-width: 75rem) {
+  .root-section-cover .bg-image {
+    width: 100%;
+    padding-bottom: 74.06%;
+  }
+}
+
 .root-section-cover .content {
+  width: 50%;
   padding-right: 0.8125rem;
+}
+
+@media screen and (max-width: 75rem) {
+  .root-section-cover .content {
+    width: 100%;
+  }
 }
 
 .root-section-cover .title {
   margin-top: 4.8125rem;
+  max-width: 39.1875rem;
+}
+
+@media screen and (max-width: 75rem) {
+  .root-section-cover .title {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-section-cover .title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .root-section-cover .description {
   margin-top: 0.9375rem;
   max-width: 36.5625rem;
+}
+
+@media screen and (max-width: 75rem) {
+  .root-section-cover .description {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-section-cover .description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.root-section-cover .warning.hidden {
+  display: none;
+}
+
+.root-section-cover .form {
+  margin-top: 1.5625rem;
+}
+
+@media screen and (max-width: 75rem) {
+  .root-section-cover .form {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-section-cover .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+}
+
+.root-section-cover .form .email-input {
+  width: 50%;
+  height: 2.8125rem;
+  max-width: 20rem;
+  border: 0.625px solid #07043B;
+  -webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+          box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 3.125px;
+  padding: 0 1.3125rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.root-section-cover .form .email-input.invalid {
+  border-color: #EF4877;
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-section-cover .form .email-input {
+    max-width: 100%;
+    width: 100%;
+    height: 2.5rem;
+  }
+}
+
+.root-section-cover .form .submit {
+  margin-left: 1rem;
+  width: 31.25%;
+  height: 2.8125rem;
+  max-width: 12.5rem;
+  background: #3065f8;
+  -webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+          box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 3.125px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+}
+
+.root-section-cover .form .submit:hover {
+  background-color: #6C9BFF;
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-section-cover .form .submit {
+    max-width: 100%;
+    width: 100%;
+    height: 2.5rem;
+    margin-left: 0;
+  }
+}
+
+.root-section-cover .warning {
+  margin-top: 0.3125rem;
+  font-size: 0.875rem;
+  color: #EF4877;
+  line-height: 16px;
+  letter-spacing: 0.4px;
 }

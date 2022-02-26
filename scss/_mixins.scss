@@ -35,9 +35,10 @@ $tablet-container-width: 88.89vw;
 $mobile-container-width: 85.33vw;
 
 @mixin container() {
- width: $desktop-container-width;
- margin-left: auto;
- margin-right: auto;
+  max-width: rem(1440);
+  width: $desktop-container-width;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(tablet){
     width: $tablet-container-width;
@@ -46,6 +47,8 @@ $mobile-container-width: 85.33vw;
  @include media(mobile){
    width: $mobile-container-width;
  }
+
+ 
 }
 
 //colors
@@ -55,3 +58,5 @@ $bright-blue: #3065f8;
 $moderate-cyan: #3c9f8f;
 $light-grayish-blue: #f6f6fe;
 $light-gray: #bfbfbf;
+$red-error: #EF4877;
+$blue-hover: #6C9BFF;

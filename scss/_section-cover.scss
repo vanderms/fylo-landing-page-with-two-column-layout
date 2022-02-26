@@ -5,29 +5,134 @@
   @include container;
   
   margin-top: rem(86);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   
+  @include media(tablet){
+    flex-direction: column-reverse;   
+    margin-top: rem(98); 
+  }
 
   .bg-image {
-    background-image: url(./images/illustration-1.svg);
-    height: rem(474);
+    width: 50%;
+    padding-bottom: 37.03%;
+    background-image: url(./images/illustration-1.svg);  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include media(tablet){
+      width: 100%;
+      padding-bottom: 74.06%;
+    }
   }
 
-  .content{
-    padding-right: rem(13);    
+  .content {
+    width: 50%;
+    padding-right: rem(13);   
+    @include media(tablet){      
+      width: 100%;
+      
+    } 
   }
 
   .title{
     margin-top: rem(77);
+    max-width: rem(627);
+    @include media(tablet){
+      margin-top: rem(40);       
+    }
+    @include media(mobile){      
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    } 
   }
 
   .description {
     margin-top: rem(15);
     max-width: rem(585);
+
+    @include media(tablet){      
+      margin-top: rem(24);      
+    } 
+
+    @include media(mobile){      
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    } 
+  }
+
+  .warning.hidden{
+    display: none;
+  }
+
+  .form{
+    margin-top: rem(25);
+
+    @include media(tablet){
+      margin-top: rem(24);
+    }
+
+    @include media(mobile){
+      display: flex;
+      flex-direction: column;
+      margin-top: rem(32);
+      gap: rem(16);
+    }
+
+    .email-input{
+      @include size(50%, rem(45));
+      max-width: rem(320);
+      border: 0.625px solid $very-dark-blue;
+      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+      border-radius: 3.125px;
+      padding: 0 rem(21);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+
+      &.invalid{
+        border-color: $red-error;
+      }
+
+      @include media(mobile){
+        max-width: 100%;
+        @include size(100%, rem(40));
+      }
+    }
+
+    .submit{
+      margin-left: rem(16);
+      @include size(31.25%, rem(45));
+      max-width: rem(200);
+      background: $bright-blue;
+      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+      border-radius: 3.125px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      color: white;
+      font-weight: 700;
+
+      &:hover{
+        background-color: $blue-hover;
+      }
+
+      @include media(mobile){
+        max-width: 100%;
+        @include size(100%, rem(40));
+        margin-left: 0;
+      }
+    }
+  }
+
+  .warning{
+    margin-top: rem(5);
+    font-size: rem(14);
+    color: $red-error;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    
   }
 
 }

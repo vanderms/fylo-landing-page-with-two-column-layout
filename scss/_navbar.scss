@@ -28,6 +28,14 @@
     @include media(mobile){
       gap: rem(24);
     }
+
+    @include media(small-mobile){
+      gap: (rem(16));
+
+      .tp-links{
+        font-size: rem(12);
+      }
+    }
   }
 
 }

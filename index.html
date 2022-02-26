@@ -20,7 +20,9 @@
 <body>
 
   <nav class='root-navbar'>
-    <img src="./images/logo.svg" alt="fiddle logo" class="logo">
+    <a href="/">
+      <img src="./images/logo.svg" alt="fiddle logo" class="logo">
+    </a>
     <ul class="links">
       <li><a class="tp-links" href="/">Features</a></li>
       <li><a class="tp-links" href="/">Team</a></li>
@@ -37,13 +39,16 @@
             family, and co-workers.</p>
         </header>
         <form action="/" class="form">
-          <input aria-label="email" id="email" type="text" class="email">
-          <input type="submit" value="Get Started">
+          <input aria-label="email" id="email" type="email" class="email-input" placeholder='Enter your email' required>
+          <input type="submit" value="Get Started" class="submit">
         </form>
-        <div class="warning">Please check your email</div>
+        <div class="warning hidden">Please check your email</div>
       </div>
       <div class="bg-image"></div>
     </section>
+
+
+
 
 
   </main>
@@ -99,5 +104,6 @@
     </p>
   </footer>
 </body>
+<script src="main.js"></script>
 
 </html>
