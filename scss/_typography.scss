@@ -20,6 +20,11 @@ $raleway: 'Raleway', sans-serif;
   color: $very-dark-blue;
 }
 
+.tp-h2{
+  @extend .tp-h1;
+  font-size: clamp(rem(16), 2.75vw, rem(40));
+}
+
 .tp-subtitle{
   font-family: $open-sans;
   font-weight: 400;
@@ -32,7 +37,7 @@ $raleway: 'Raleway', sans-serif;
 .tp-paragraph{
   font-family: $open-sans;
   font-weight: 400;
-  font-size: 16px;
+  font-size: clamp(rem(14), 3.5vw, rem(16));
   line-height: 1.5;
   color: $very-dark-blue;
 }
