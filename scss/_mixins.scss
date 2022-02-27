@@ -30,12 +30,12 @@ $breakpoints: (
   height: $height;
 }
 
-$desktop-container-width: 88.89vw;
-$tablet-container-width: 88.89vw;
-$mobile-container-width: 85.33vw;
+$desktop-container-width: 88.89%;
+$tablet-container-width: 88.89%;
+$mobile-container-width: 85.33%;
 
 @mixin container() {
-  max-width: rem(1440);
+  
   width: $desktop-container-width;
   margin-left: auto;
   margin-right: auto;
@@ -55,8 +55,8 @@ $mobile-container-width: 85.33vw;
 $very-dark-blue: #07043B;
 $desaturated-blue: #585989;
 $bright-blue: #3065f8;
-$moderate-cyan: #3c9f8f;
-$light-grayish-blue: #f6f6fe;
+$moderate-cyan: #3DA08F;
+$light-grayish-blue: #f8f8fe;
 $light-gray: #bfbfbf;
 $red-error: #EF4877;
 $blue-hover: #6C9BFF;

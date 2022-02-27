@@ -17,7 +17,12 @@ ul {
   list-style-type: none;
 }
 
-
+body {
+  max-width: rem(1440);
+  margin: 0 auto;
+  position: relative;
+  
+}
 
 
 .attribution {

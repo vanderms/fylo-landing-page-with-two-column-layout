@@ -28,3 +28,20 @@ $raleway: 'Raleway', sans-serif;
   letter-spacing: 0.53125px;
   color: $very-dark-blue;
 }
+
+.tp-paragraph{
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $very-dark-blue;
+}
+
+.tp-quote{
+  font-family:$open-sans;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.77;
+  letter-spacing: 0.5px;
+  color: $very-dark-blue;
+}
