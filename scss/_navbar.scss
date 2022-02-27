@@ -1,6 +1,6 @@
 @import './mixins';
 
-.root-navbar {
+.root-navbar{
   margin-top: rem(65);
   @include container;
   height: rem(49);
@@ -37,5 +37,4 @@
       }
     }
   }
-
 }
