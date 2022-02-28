@@ -337,7 +337,7 @@ body {
   right: 0;
   height: 7.125rem;
   background-color: white;
-  background-image: url(/images/bg-curve-desktop.svg);
+  background-image: url(./images/bg-curve-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -345,7 +345,7 @@ body {
 
 @media screen and (max-width: null) {
   .root-section-productive::before {
-    background-image: url(/images/bg-curve-mobile.svg);
+    background-image: url(./images/bg-curve-mobile.svg);
   }
 }
 
@@ -541,7 +541,7 @@ body {
 .root-section-productive .section-container .bg-image {
   width: 100%;
   padding-bottom: 75.46%;
-  background-image: url(/images/illustration-2.svg);
+  background-image: url(./images/illustration-2.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
