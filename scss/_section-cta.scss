@@ -1,0 +1,130 @@
+@import './mixins';
+
+
+
+.root-section-cta{
+  background-color: $desaturated-blue;
+  padding-top: rem(100);
+  padding-bottom: rem(88);
+
+  @include media(tablet){
+    padding-top: rem(54);
+    padding-bottom: rem(71);
+  }
+
+  .section-container{
+    @include container;
+    display: flex;
+    justify-content: space-between;
+
+    @include media(tablet){
+      flex-direction: column;
+    }
+  }
+
+  .text-content {
+    max-width: rem(533);
+    width: 48%;    
+    color: white;
+    @include media(tablet){
+      width: 100%;
+    }
+
+    .title{
+      font-family: $raleway;
+      font-weight: 700;
+      font-size: clamp(rem(18), 4.8vw, rem(32));
+      line-height: 1.5;
+
+      @include media(mobile){
+        text-align: center;
+      }
+    }
+
+    .description{
+      margin-top: rem(17);
+      font-size: clamp(rem(14), 3.5vw, rem(16));
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+
+      @include media(mobile){
+        text-align: center;
+      }
+    }
+  }
+
+  .form-container{
+    max-width: rem(533);
+    width: 48%;   
+    color: white;
+    margin-top: rem(12); 
+    
+    @include media(tablet){
+      width: 100%;
+      margin-top: rem(24);
+    }
+  }
+
+  .form {
+    width: 100%;
+
+    @include media(mobile){
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .email-input{
+    @include size(100%, rem(48));
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border-radius: rem(3.125);   
+    padding: 0 rem(22);    
+    border: none; 
+    
+    @include media(mobile){
+      height: rem(32);      
+      max-width: rem(240);
+    }
+  }
+
+  .submit{   
+    margin-top: rem(16);
+    @include size(41.7%, rem(48));    
+    background: $bright-blue;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border-radius: rem(3.125);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+
+    &:hover{
+      background-color: $blue-hover;
+    }
+
+    @include media(mobile){
+      max-width: rem(240);     
+      @include size(100%, rem(32));
+    }
+  }
+
+  .warning{
+    &.hidden{
+      display: none;
+    }
+    margin-top: rem(4);
+    font-size: rem(12);
+    color: white;
+    line-height: 16px;
+    letter-spacing: 0.4px;  
+    
+    @include media(mobile){
+      width: 100%;
+      max-width: rem(240);
+      text-align: left;
+    }
+  }
+
+}

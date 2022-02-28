@@ -63,10 +63,7 @@
     } 
   }
 
-  .warning.hidden{
-    display: none;
-  }
-
+  
   .form{
     margin-top: rem(25);
 
@@ -127,12 +124,14 @@
   }
 
   .warning{
+    &.hidden{
+      display: none;
+    }
     margin-top: rem(5);
     font-size: rem(14);
     color: $red-error;
     line-height: 16px;
-    letter-spacing: 0.4px;
-    
+    letter-spacing: 0.4px;    
   }
 
 }
