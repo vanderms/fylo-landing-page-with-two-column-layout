@@ -21,15 +21,6 @@ body {
   position: relative;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
-}
-
 .tp-links {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
@@ -735,4 +726,105 @@ body {
     max-width: 15rem;
     text-align: left;
   }
+}
+
+.root-footer {
+  background-color: #07043B;
+}
+
+.root-footer .footer-container {
+  padding-top: 5.75rem;
+  width: 88.89%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 24.4375rem;
+  color: white;
+}
+
+@media screen and (max-width: 75rem) {
+  .root-footer .footer-container {
+    width: 88.89%;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .root-footer .footer-container {
+    width: 85.33%;
+  }
+}
+
+.root-footer .contact-and-links {
+  margin-top: 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.root-footer .contact-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5rem auto;
+      grid-template-columns: 1.5rem auto;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  gap: 1rem;
+  max-width: 13.875rem;
+}
+
+.root-footer .contact-list dd, .root-footer .contact-list dt {
+  height: 1.5625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root-footer .links-1 {
+  max-width: 4.3125rem;
+  margin-left: Min(13.875rem, 15.42vw);
+}
+
+.root-footer .links-2 {
+  max-width: 5.0625rem;
+  margin-left: Min(12.5rem, 13.89vw);
+}
+
+.root-footer .links-1 li + li, .root-footer .links-2 li + li {
+  margin-top: 1rem;
+}
+
+.root-footer .social-link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.78125rem;
+  margin-left: Min(11.5625rem, 12.85vw);
+}
+
+.root-footer .social-link-list .social-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.root-footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.root-footer .attribution a {
+  color: #3e52a3;
 }
